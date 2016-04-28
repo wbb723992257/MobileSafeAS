@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "E:\\AndroidStudio\\mobilesafe\\app\\build\\intermediates\\res\\merged\\debug\\anim\\trans_previousin.xml",
+        "source": "E:\\AndroidStudio\\mobilesafe\\app\\src\\main\\res\\anim\\trans_previousin.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudio\\mobilesafe\\app\\build\\intermediates\\res\\merged\\debug\\anim\\trans_out.xml",
+        "source": "E:\\AndroidStudio\\mobilesafe\\app\\src\\main\\res\\anim\\trans_out.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudio\\mobilesafe\\app\\build\\intermediates\\res\\merged\\debug\\anim\\trans_previousout.xml",
+        "source": "E:\\AndroidStudio\\mobilesafe\\app\\src\\main\\res\\anim\\trans_previousout.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudio\\mobilesafe\\app\\build\\intermediates\\res\\merged\\debug\\anim\\trans_in.xml",
+        "source": "E:\\AndroidStudio\\mobilesafe\\app\\src\\main\\res\\anim\\trans_in.xml"
+    }
+]

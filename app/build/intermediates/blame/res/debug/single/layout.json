@@ -1,0 +1,78 @@
+[
+    {
+        "merged": "E:\\AndroidStudio\\mobilesafe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_setup03.xml",
+        "source": "E:\\AndroidStudio\\mobilesafe\\app\\src\\main\\res\\layout\\activity_setup03.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudio\\mobilesafe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\contact_list_item.xml",
+        "source": "E:\\AndroidStudio\\mobilesafe\\app\\src\\main\\res\\layout\\contact_list_item.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudio\\mobilesafe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_setting.xml",
+        "source": "E:\\AndroidStudio\\mobilesafe\\app\\src\\main\\res\\layout\\activity_setting.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudio\\mobilesafe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_input_password.xml",
+        "source": "E:\\AndroidStudio\\mobilesafe\\app\\src\\main\\res\\layout\\dialog_input_password.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudio\\mobilesafe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_setup02.xml",
+        "source": "E:\\AndroidStudio\\mobilesafe\\app\\src\\main\\res\\layout\\activity_setup02.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudio\\mobilesafe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\home_list_item.xml",
+        "source": "E:\\AndroidStudio\\mobilesafe\\app\\src\\main\\res\\layout\\home_list_item.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudio\\mobilesafe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_splash.xml",
+        "source": "E:\\AndroidStudio\\mobilesafe\\app\\src\\main\\res\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudio\\mobilesafe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_address.xml",
+        "source": "E:\\AndroidStudio\\mobilesafe\\app\\src\\main\\res\\layout\\activity_address.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudio\\mobilesafe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_home.xml",
+        "source": "E:\\AndroidStudio\\mobilesafe\\app\\src\\main\\res\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudio\\mobilesafe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\view_setting_click.xml",
+        "source": "E:\\AndroidStudio\\mobilesafe\\app\\src\\main\\res\\layout\\view_setting_click.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudio\\mobilesafe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_set_password.xml",
+        "source": "E:\\AndroidStudio\\mobilesafe\\app\\src\\main\\res\\layout\\dialog_set_password.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudio\\mobilesafe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_drag_view.xml",
+        "source": "E:\\AndroidStudio\\mobilesafe\\app\\src\\main\\res\\layout\\activity_drag_view.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudio\\mobilesafe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_atools.xml",
+        "source": "E:\\AndroidStudio\\mobilesafe\\app\\src\\main\\res\\layout\\activity_atools.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudio\\mobilesafe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_lostfind.xml",
+        "source": "E:\\AndroidStudio\\mobilesafe\\app\\src\\main\\res\\layout\\activity_lostfind.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudio\\mobilesafe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\view_setting_item.xml",
+        "source": "E:\\AndroidStudio\\mobilesafe\\app\\src\\main\\res\\layout\\view_setting_item.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudio\\mobilesafe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_setup01.xml",
+        "source": "E:\\AndroidStudio\\mobilesafe\\app\\src\\main\\res\\layout\\activity_setup01.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudio\\mobilesafe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_setup04.xml",
+        "source": "E:\\AndroidStudio\\mobilesafe\\app\\src\\main\\res\\layout\\activity_setup04.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudio\\mobilesafe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\toast_addressview.xml",
+        "source": "E:\\AndroidStudio\\mobilesafe\\app\\src\\main\\res\\layout\\toast_addressview.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudio\\mobilesafe\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_contact.xml",
+        "source": "E:\\AndroidStudio\\mobilesafe\\app\\src\\main\\res\\layout\\activity_contact.xml"
+    }
+]

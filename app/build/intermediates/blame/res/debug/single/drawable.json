@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "E:\\AndroidStudio\\mobilesafe\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_selector.xml",
+        "source": "E:\\AndroidStudio\\mobilesafe\\app\\src\\main\\res\\drawable\\shape_selector.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudio\\mobilesafe\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_lightgreen_selector.xml",
+        "source": "E:\\AndroidStudio\\mobilesafe\\app\\src\\main\\res\\drawable\\btn_lightgreen_selector.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudio\\mobilesafe\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\gradient_box.xml",
+        "source": "E:\\AndroidStudio\\mobilesafe\\app\\src\\main\\res\\drawable\\gradient_box.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudio\\mobilesafe\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_green_selector.xml",
+        "source": "E:\\AndroidStudio\\mobilesafe\\app\\src\\main\\res\\drawable\\btn_green_selector.xml"
+    }
+]
