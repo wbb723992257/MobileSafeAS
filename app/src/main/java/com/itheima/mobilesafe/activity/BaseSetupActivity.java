@@ -1,9 +1,6 @@
 package com.itheima.mobilesafe.activity;
 
-import com.example.mobilesafe.R;
-
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.GestureDetector;
 import android.view.MotionEvent;

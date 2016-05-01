@@ -10,7 +10,6 @@ import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.telephony.SmsMessage;
 import android.text.TextUtils;
-import android.util.Log;
 
 public class SmsReceiver extends BroadcastReceiver {
 

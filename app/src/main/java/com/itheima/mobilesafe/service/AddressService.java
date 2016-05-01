@@ -10,7 +10,6 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
-import android.graphics.Color;
 import android.graphics.PixelFormat;
 import android.os.IBinder;
 import android.telephony.PhoneStateListener;
@@ -21,7 +20,6 @@ import android.view.View;
 import android.view.View.OnTouchListener;
 import android.view.WindowManager;
 import android.widget.TextView;
-import android.widget.Toast;
 
 /**
  * 来电提醒服务
@@ -56,7 +54,7 @@ public class AddressService extends Service {
 		receiver = new OutCallReceiver();
 
 		IntentFilter filter = new IntentFilter(Intent.ACTION_NEW_OUTGOING_CALL);
-		registerReceiver(receiver, filter);// 鍔ㄦ?娉ㄥ唽骞挎挱
+		registerReceiver(receiver, filter);
 	}
 
 	class MyListener extends PhoneStateListener {

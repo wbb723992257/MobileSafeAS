@@ -4,5 +4,8 @@
     <string name="app_name">手机卫士</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="yao">YaoHoo手机卫士，全天候防护小主的手机，绝对是最牛逼的手机卫士，没有之一</string>
+    <string name="functionlist">功能列表</string>
+    <string name="title_activity_democlass">democlass</string>
 
 </resources>

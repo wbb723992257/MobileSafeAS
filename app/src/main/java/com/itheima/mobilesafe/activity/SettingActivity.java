@@ -2,6 +2,7 @@ package com.itheima.mobilesafe.activity;
 
 import com.example.mobilesafe.R;
 import com.itheima.mobilesafe.service.AddressService;
+import com.itheima.mobilesafe.service.CallSafeService;
 import com.itheima.mobilesafe.utils.ServiceStatusUtils;
 import com.itheima.mobilesafe.view.SettingClickView;
 import com.itheima.mobilesafe.view.SettingItemView;
@@ -20,6 +21,7 @@ public class SettingActivity extends Activity {
 	private SettingItemView sivUpdate;
 	private SharedPreferences mpref;
 	private SettingItemView sivAddress;
+	private SettingItemView sivCallSafe;
 	private SettingClickView scvAddressStyle;
 
 	@Override
@@ -32,6 +34,7 @@ public class SettingActivity extends Activity {
 		initAddressView();
 		initAddressStyle();
 		initAddressLocation();
+		initBlackView();
 
 	}
 	//--------------------------------------------------------------------------
@@ -160,5 +163,37 @@ public class SettingActivity extends Activity {
 						DragViewActivity.class));
 			}
 		});
+	}
+
+	//--------------------------------------------------------------------------
+	private void initBlackView() {
+		sivCallSafe = (SettingItemView) findViewById(R.id.siv_callsafe);
+
+		// 根据黑名单服务是否运行来更新checkbox
+		boolean serviceRunning = ServiceStatusUtils.isServiceRunning(SettingActivity.this, "com.example.mobilesafe.service.CallSafeService");
+		if (serviceRunning) {
+			sivCallSafe.setChecked(true);
+		} else {
+			sivCallSafe.setChecked(false);
+		}
+
+		sivCallSafe.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				if (sivCallSafe.isChecked()) {
+					sivCallSafe.setChecked(false);
+					stopService(new Intent(SettingActivity.this,
+							CallSafeService.class));// 停止黑名单服务
+					System.out.println(" 停止黑名单服务");
+				} else {
+					sivCallSafe.setChecked(true);
+					startService(new Intent(SettingActivity.this, CallSafeService.class));// 开启黑名单服务
+					System.out.println("开启黑名单服务");
+				}
+			}
+		});
+
+
 	}
 }

@@ -1,6 +1,7 @@
 package com.itheima.mobilesafe.activity;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -8,6 +9,8 @@ import android.text.TextUtils;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -129,7 +132,69 @@ public class CallSafeActivity extends Activity {
 
 
     }
+public void addBlackNumber(View view){
+    final AlertDialog.Builder builder = new AlertDialog.Builder(this);
+    final AlertDialog dialog = builder.create();
+    View dialog_view = View.inflate(this, R.layout.dialog_add_black_number, null);
+    final EditText et_number = (EditText) dialog_view.findViewById(R.id.et_number);
 
+    Button btn_ok = (Button) dialog_view.findViewById(R.id.btn_ok);
+
+    Button btn_cancel = (Button) dialog_view.findViewById(R.id.btn_cancel);
+
+    final CheckBox cb_phone = (CheckBox) dialog_view.findViewById(R.id.cb_phone);
+
+    final CheckBox cb_sms = (CheckBox) dialog_view.findViewById(R.id.cb_sms);
+
+    btn_cancel.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            dialog.dismiss();
+        }
+    });
+
+    btn_ok.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            String str_number = et_number.getText().toString().trim();
+            if(TextUtils.isEmpty(str_number)){
+                Toast.makeText(CallSafeActivity.this,"请输入黑名单号码",Toast.LENGTH_SHORT).show();
+                return;
+            }
+
+            String mode = "";
+
+            if(cb_phone.isChecked()&& cb_sms.isChecked()){
+                mode = "1";
+            }else if(cb_phone.isChecked()){
+                mode = "2";
+            }else if(cb_sms.isChecked()){
+                mode = "3";
+            }else{
+                Toast.makeText(CallSafeActivity.this,"请勾选拦截模式",Toast.LENGTH_SHORT).show();
+                return;
+            }
+            BlackNumberInfo blackNumberInfo = new BlackNumberInfo();
+            blackNumberInfo.setNumber(str_number);
+            blackNumberInfo.setMode(mode);
+            blacknumberinfos.add(0,blackNumberInfo);
+            //把电话号码和拦截模式添加到数据库。
+            dao.add(str_number,mode);
+
+            if(adapter == null){
+                adapter = new CallSafeAdapter();
+                listview.setAdapter(adapter);
+            }else{
+                adapter.notifyDataSetChanged();
+            }
+            dialog.dismiss();
+        }
+    });
+    dialog.setView(dialog_view);
+    dialog.show();
+
+
+}
 
     class CallSafeAdapter extends BaseAdapter {
 

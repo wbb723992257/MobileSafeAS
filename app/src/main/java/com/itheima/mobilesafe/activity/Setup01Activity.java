@@ -2,10 +2,8 @@ package com.itheima.mobilesafe.activity;
 
 import com.example.mobilesafe.R;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 
 //第1个设置向导页
 public class Setup01Activity extends BaseSetupActivity {

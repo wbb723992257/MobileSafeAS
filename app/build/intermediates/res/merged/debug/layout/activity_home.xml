@@ -7,7 +7,7 @@
     <TextView
         android:id="@+id/textView1"
         style="@style/TitleStyle"
-        android:text="功能列表"/>
+        android:text="@string/functionlist"/>
 
     <com.itheima.mobilesafe.view.FocusedTextView
         android:layout_marginTop="5dp"
@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:ellipsize="marquee"
         android:singleLine="true"
-        android:text="手机卫士，全天候防护小主的手机，最牛逼的手机卫士，没有之一"
+        android:text="@string/yao"
         android:textColor="@android:color/black"
         android:textSize="16sp" />
 

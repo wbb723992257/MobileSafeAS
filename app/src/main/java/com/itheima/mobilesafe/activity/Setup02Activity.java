@@ -3,14 +3,11 @@ package com.itheima.mobilesafe.activity;
 import com.example.mobilesafe.R;
 import com.itheima.mobilesafe.view.SettingItemView;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
-import android.view.GestureDetector;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Toast;

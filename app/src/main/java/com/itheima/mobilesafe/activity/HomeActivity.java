@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -20,22 +21,30 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.mobilesafe.R;
+import com.google.android.gms.appindexing.Action;
+import com.google.android.gms.appindexing.AppIndex;
+import com.google.android.gms.common.api.GoogleApiClient;
 import com.itheima.mobilesafe.utils.MD5Utils;
 
 public class HomeActivity extends Activity {
 	private GridView gvHome;
-	private String[] mItem = new String[] { "手机防盗", "通讯卫士", "软件管理", "进程管理",
-			"流量统计", "手机杀毒", "缓存清理", "高级工具", "设置中心" };
-	private int[] mPics = new int[] { R.drawable.home_safe,
+	private String[] mItem = new String[]{"手机防盗", "通讯卫士", "软件管理", "进程管理",
+			"流量统计", "手机杀毒", "缓存清理", "高级工具", "设置中心"};
+	private int[] mPics = new int[]{R.drawable.home_safe,
 			R.drawable.home_callmsgsafe, R.drawable.home_apps,
 			R.drawable.home_taskmanager, R.drawable.home_netmanager,
 			R.drawable.home_trojan, R.drawable.home_sysoptimize,
-			R.drawable.home_tools, R.drawable.home_settings };
+			R.drawable.home_tools, R.drawable.home_settings};
 	private Button btnOk;
 	private Button btnCancle;
 	private EditText etPassword;
 	private EditText etPasswordConfig;
 	private SharedPreferences mpref;
+	/**
+	 * ATTENTION: This was auto-generated to implement the App Indexing API.
+	 * See https://g.co/AppIndexing/AndroidStudio for more information.
+	 */
+	private GoogleApiClient client;
 
 	// -----------------------------------------------------------------------------------
 	@Override
@@ -51,29 +60,35 @@ public class HomeActivity extends Activity {
 
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view,
-					int position, long id) {
+									int position, long id) {
 				// TODO Auto-generated method stub
 				switch (position) {
-				case 0:
-					showPasswordDialog();
-					break;
-				case 7:
-					startActivity(new Intent(HomeActivity.this,
-							AToolsActivity.class));
-					break;
-				case 8:
-					startActivity(new Intent(HomeActivity.this,
-							SettingActivity.class));
+					case 0:
+						showPasswordDialog();
+						break;
+					case 1:
+						startActivity(new Intent(HomeActivity.this,CallSafeActivity.class));
+						break;
+					case 7:
+						startActivity(new Intent(HomeActivity.this,
+								AToolsActivity.class));
+						break;
+					case 8:
+						startActivity(new Intent(HomeActivity.this,
+								SettingActivity.class));
 
-					break;
+						break;
 
-				default:
-					break;
+					default:
+						break;
 				}
 
 			}
 
 		});
+		// ATTENTION: This was auto-generated to implement the App Indexing API.
+		// See https://g.co/AppIndexing/AndroidStudio for more information.
+		client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
 	}
 
 	// -----------------------------------------------------------------------------------
@@ -90,6 +105,7 @@ public class HomeActivity extends Activity {
 		}
 
 	}
+
 	//-----------------------------------------------------------------------------------
 	// 输入密码与本地存储密码进行比对
 	private void showPasswordInputDialog() {
@@ -144,6 +160,7 @@ public class HomeActivity extends Activity {
 
 		dialog.show();
 	}
+
 	//-----------------------------------------------------------------------------------
 	// 显示设置密码对话框
 	private void showPasswordSetDialog() {
@@ -183,7 +200,7 @@ public class HomeActivity extends Activity {
 										MD5Utils.encode(password)).commit();
 						startActivity(new Intent(HomeActivity.this, LostFindActivity.class));
 						dialog.dismiss();
-						
+
 					} else {
 						Toast.makeText(HomeActivity.this, "请确认密码",
 								Toast.LENGTH_SHORT).show();

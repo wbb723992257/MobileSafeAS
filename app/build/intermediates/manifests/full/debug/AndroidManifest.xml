@@ -5,8 +5,8 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
-        android:targetSdkVersion="8" />
+        android:minSdkVersion="19"
+        android:targetSdkVersion="19" />
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -20,6 +20,8 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -35,30 +37,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.itheima.mobilesafe.activity.HomeActivity" >
-        </activity>
-        <activity android:name="com.itheima.mobilesafe.activity.SettingActivity" >
-        </activity>
-        <activity android:name="com.itheima.mobilesafe.activity.LostFindActivity" >
-        </activity>
-        <activity android:name="com.itheima.mobilesafe.activity.Setup01Activity" >
-        </activity>
-        <activity android:name="com.itheima.mobilesafe.activity.Setup02Activity" >
-        </activity>
-        <activity android:name="com.itheima.mobilesafe.activity.Setup03Activity" >
-        </activity>
-        <activity android:name="com.itheima.mobilesafe.activity.Setup04Activity" >
-        </activity>
-        <activity android:name="com.itheima.mobilesafe.activity.ContactActivity" >
-        </activity>
-        <activity android:name="com.itheima.mobilesafe.activity.AToolsActivity" >
-        </activity>
-        <activity android:name="com.itheima.mobilesafe.activity.AddressActivity" >
-        </activity>
+        <activity android:name="com.itheima.mobilesafe.activity.HomeActivity" />
+        <activity android:name="com.itheima.mobilesafe.activity.SettingActivity" />
+        <activity android:name="com.itheima.mobilesafe.activity.LostFindActivity" />
+        <activity android:name="com.itheima.mobilesafe.activity.Setup01Activity" />
+        <activity android:name="com.itheima.mobilesafe.activity.Setup02Activity" />
+        <activity android:name="com.itheima.mobilesafe.activity.Setup03Activity" />
+        <activity android:name="com.itheima.mobilesafe.activity.Setup04Activity" />
+        <activity android:name="com.itheima.mobilesafe.activity.ContactActivity" />
+        <activity android:name="com.itheima.mobilesafe.activity.AToolsActivity" />
+        <activity android:name="com.itheima.mobilesafe.activity.AddressActivity" />
         <activity
             android:name="com.itheima.mobilesafe.activity.DragViewActivity"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-        </activity>
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <receiver android:name="com.itheima.mobilesafe.receiver.BootCompleteReceiver" >
             <intent-filter>
@@ -71,10 +62,17 @@
             </intent-filter>
         </receiver>
 
-        <service android:name="com.itheima.mobilesafe.service.LocationService" >
-        </service>
-        <service android:name="com.itheima.mobilesafe.service.AddressService" >
-        </service>
+        <service android:name="com.itheima.mobilesafe.service.LocationService" />
+        <service android:name="com.itheima.mobilesafe.service.AddressService" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name="com.itheima.mobilesafe.activity.CallSafeActivity" />
     </application>
 
 </manifest>
